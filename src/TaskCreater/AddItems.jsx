@@ -69,7 +69,7 @@ const AddItems = () => {
 
         } else{
             console.log(' i want to reduce coin value by coin needed here ');
-            fetch("http://localhost:5002/users", {
+            fetch("https://assignment-12-server-beige-five.vercel.app/users", {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const AddItems = () => {
         }
 
         // send data to the server
-        fetch("http://localhost:5002/items", {
+        fetch("https://assignment-12-server-beige-five.vercel.app/items", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -105,7 +105,7 @@ const AddItems = () => {
             .then(data => {
                 console.log(data)
                 if(data.insertedId){
-                  fetch("http://localhost:5002/notifications", {
+                  fetch("https://assignment-12-server-beige-five.vercel.app/notifications", {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

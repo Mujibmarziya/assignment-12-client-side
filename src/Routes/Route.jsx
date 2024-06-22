@@ -100,7 +100,7 @@ export const Route = createBrowserRouter([
             element: (
              <Update></Update> 
             ),
-            loader: ({params}) => fetch(`http://localhost:5002/items/${params._id}`),
+            loader: ({params}) => fetch(`https://assignment-12-server-beige-five.vercel.app/items/${params._id}`),
           },
           {
             path: 'my-tasklists',
@@ -117,7 +117,7 @@ export const Route = createBrowserRouter([
               <Details></Details>
               </Privateroute>
             ),
-            loader: ({params}) => fetch(`http://localhost:5002/items/${params._id}`),
+            loader: ({params}) => fetch(`https://assignment-12-server-beige-five.vercel.app/items/${params._id}`),
           },
           {
             path: 'my-submissions',

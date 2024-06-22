@@ -101,7 +101,7 @@ const Signup = () => {
 
         // send data to the server
         try {
-          const response = await fetch("http://localhost:5002/users", {
+          const response = await fetch("https://assignment-12-server-beige-five.vercel.app/users", {
               method: 'POST',
               headers: {
                   'content-type': 'application/json'
@@ -116,9 +116,9 @@ const Signup = () => {
 
           if (data.insertedId) {
             console.log("inserted");
-              // const notis = await axios.post('http://localhost:5002/notifications', notiData);
+              // const notis = await axios.post('https://assignment-12-server-beige-five.vercel.app/notifications', notiData);
               // console.log(notis.data);
-              fetch("http://localhost:5002/notifications", {
+              fetch("https://assignment-12-server-beige-five.vercel.app/notifications", {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -128,7 +128,7 @@ const Signup = () => {
               toast.success('noti created successfully');
           }
           
-      //     const notis = await fetch('http://localhost:5002/notifications', {
+      //     const notis = await fetch('https://assignment-12-server-beige-five.vercel.app/notifications', {
       //       method: 'POST',
       //       headers: {
       //           'content-type': 'application/json'

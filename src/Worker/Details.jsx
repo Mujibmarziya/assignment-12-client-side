@@ -55,7 +55,7 @@ const Details = () => {
         const itemForSubmission = { taskID:_id,title,image,Task_details,dateOfSubmission:dateTime,status:'Pending',submission_Details:submission_Details,creater_name:displayname,createrEmail:email,workerName:user?.displayName,workerEmail:user?.email,subcategory_Name,submission_info,Payable_amount,task_quantity,email,displayname,userphoto };
 
         // send data to the server
-        fetch("http://localhost:5002/submissions", {
+        fetch("https://assignment-12-server-beige-five.vercel.app/submissions", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -66,7 +66,7 @@ const Details = () => {
             .then(data => {
                 console.log(data)
                 if(data.insertedId){
-                    fetch(`http://localhost:5002/items/${_id}`, {
+                    fetch(`https://assignment-12-server-beige-five.vercel.app/items/${_id}`, {
                         method: 'PATCH',
                         headers: {
                             'content-type': 'application/json'

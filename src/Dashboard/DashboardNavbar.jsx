@@ -84,8 +84,8 @@ console.log(user);
 </ul>
 </ul>
 </div>
-<div className=' hidden md:flex px-4 py-2 shadow-lg rounded-lg justify-center items-center bg-blue-100 '>
-            <Link to={'/'}><h1 className="btn btn-ghost  text-blue-800">Coin Workers</h1></Link>
+<div className=' hidden md:flex px-4 py-2 shadow-lg rounded-lg justify-center items-center  '>
+            <Link to={'/'}><h1 className="btn btn-ghost font-bold  text-blue-900">Coin Workers</h1></Link>
             </div>
 </div>
 <div className="navbar-center hidden lg:flex">

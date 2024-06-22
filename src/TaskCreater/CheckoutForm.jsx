@@ -121,7 +121,7 @@ console.log(' coin:', coin,dollar);
                 console.log('payment saved', res.data);
                 // refetch();
                 if (res.data?.insertedId) {
-                    fetch("http://localhost:5002/notifications", {
+                    fetch("https://assignment-12-server-beige-five.vercel.app/notifications", {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

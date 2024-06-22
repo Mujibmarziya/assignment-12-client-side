@@ -33,7 +33,7 @@ const Login = () => {
           //         console.log(newblog);
           
                 // send data to the server
-                fetch("http://localhost:5002/users", {
+                fetch("https://assignment-12-server-beige-five.vercel.app/users", {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
