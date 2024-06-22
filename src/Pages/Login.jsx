@@ -21,23 +21,8 @@ const Login = () => {
     const handlingGoogleSignIn = async () => {
 
 
-//       // send data to the server
-//       fetch("http://localhost:5002/users", {
-//           method: 'POST',
-//           headers: {
-//               'content-type': 'application/json'
-//           },
-//           body: JSON.stringify(newuserinfo)
-//       })
-//           .then(res => res.json())
-//           .then(data => {
-//               console.log(data)
-//               if(data.insertedId){
-//                  console.log('add hoise');
-              
-               
-//               }
-//   })
+
+
        
        await signinwithgoogle()
             .then(result => {
