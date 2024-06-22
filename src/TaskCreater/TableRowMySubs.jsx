@@ -34,7 +34,7 @@ const TableRowMySubs = ({row,refetch}) => {
             if(response && status !=='Rejected'){
                 const response = await axiosCommon.post('/users',{email:workerEmail,task_completion:parseInt(1),coins:parseInt(Payable_amount)} ); 
                 // payable-amount =coins per task
-                toast.success('pay hoise worker er ar task completion barse')
+                toast.success('Payment Done and task Completion of worker increased')
                 // if(status !=='Approved'){
                 //     const response1 = await axiosCommon.post('/notifications',{message:'status updated '} );
                 //     toast.success('status rejected')
