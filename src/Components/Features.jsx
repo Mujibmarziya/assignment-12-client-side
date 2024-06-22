@@ -42,7 +42,7 @@ const Features = () => {
 		</div>
 		<div className="flex flex-col px-8 py-6">
 			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font dark:text-gray-800">Guarantee to good life</h2>
-			<p className="flex-1 mb-4 text-base leading-relaxed dark:text-gray-600">Experience peace of mind with our secure payment system, designed to protect your transactions with top-notch encryption and fraud prevention measures.</p>
+			<p className="flex-1 mb-4 text-base leading-relaxed dark:text-gray-600">Experience peace of mind with our secure payment system, designed to protect your transactions with best encryption and fraud prevention measures.</p>
 			<a className="inline-flex items-center space-x-2 text-sm dark:text-violet-600" href="/docs">
 				<span>Learn More</span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
