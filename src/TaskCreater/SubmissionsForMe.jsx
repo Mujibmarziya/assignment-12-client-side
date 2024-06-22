@@ -70,33 +70,10 @@ const SubmissionsForMe = () => {
     <TableBody>
       {submissions.map((row) => (
         <TableRowMySubs key={row._id} row={row} refetch={refetch}></TableRowMySubs>
-    //     <TableRow
-       
-    //       key={row._id} 
-    //       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-    //     >
-    //       <TableCell component="th" scope="row">
-    //        {row.title}
-    //       </TableCell>
-    //       <TableCell align="right">{row.Task_details}</TableCell>
-    //       <TableCell align="right">{row.dateOfSubmission}</TableCell> 
-    //       <TableCell align="right"><h1 className='text-right lg:text-center'>{row.task_quantity}</h1></TableCell>
-    //       <TableCell align="right">{row.submission_Details}</TableCell>
-    //       <TableCell align="right">{row.Payable_amount}</TableCell> 
-    //       <TableCell align="right">{row.submission_info}</TableCell> 
-    //       <TableCell align="right">{row.status}</TableCell> 
-    //       <Link className="btn m-4 text-white bg-blue-900" >
-    //       Approve
-    //     </Link>
-    //     <Link className="btn m-4 text-white bg-blue-900" >
-    //       Reject
-    //     </Link>
-    //       {/* <TableCell align="right">
-         
-       
-       
-    //   {/* </TableCell> */}
-    //     </TableRow>
+    
+   
+   
+ 
       ))}
     </TableBody>
   </Table>
