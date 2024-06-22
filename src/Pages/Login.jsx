@@ -20,10 +20,6 @@ const Login = () => {
 
     const handlingGoogleSignIn = async () => {
 
-//       const newuserinfo = { email, image, fullName,role, userCoin };
-//       console.log(newuserinfo);
-
-// //         console.log(newblog);
 
 //       // send data to the server
 //       fetch("http://localhost:5002/users", {
