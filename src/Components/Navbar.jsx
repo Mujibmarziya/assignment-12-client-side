@@ -244,7 +244,7 @@ console.log(user);
          <li className='btn btn-ghost bg-blue-900 text-white'>
         <NavLink to='/login'>Log In</NavLink>
     </li>
-    <li className='btn btn-ghost bg-black text-white'>
+    <li className='btn btn-ghost bg-blue-900 text-white'>
     <NavLink 
      to="/signup"
      className={({ isActive, isPending }) =>
