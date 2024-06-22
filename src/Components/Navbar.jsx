@@ -255,7 +255,7 @@ console.log(user);
     
     <li className='btn btn-ghost bg-blue-900 text-white'>
     <NavLink 
-     to="/signup"
+     to="https://www.youtube.com/watch?v=csQTMFZjkSc"
      className={({ isActive, isPending }) =>
        isPending ? "pending" : isActive ? " text-white bg-blue-900 p-2 ml-1 " : ""
      }
