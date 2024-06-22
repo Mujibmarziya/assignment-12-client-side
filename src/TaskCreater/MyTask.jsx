@@ -56,29 +56,8 @@ const MyTask = () => {
    toast.success('deleted and reduced coin')
 
 
-}
-    // const { mutateAsync } = useMutation({
-    //   mutationFn: async id => {
-    //     const { data } = await axiosSecure.delete(`/room/${id}`)
-    //     return data
-    //   },
-    //   onSuccess: data => {
-    //     console.log(data)
-    //     refetch()
-    //     toast.success('Successfully deleted.')
-    //   },
-    // })
-  
-    // //  Handle Delete
-    // const handleDelete = async id => {
-    //   console.log(id)
-    //   try {
-    //     await mutateAsync(id)
-    //   } catch (err) {
-    //     console.log(err)
-    //   }
-    // }
-    // if (isLoading) return <LoadingSpinner />
+ 
+    
     return (
         <div>
         <div>
