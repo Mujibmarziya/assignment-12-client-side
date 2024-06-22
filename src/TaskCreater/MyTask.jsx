@@ -37,9 +37,12 @@ const MyTask = () => {
     //   delete
 
     const handleDelete =async (_id) => {
+      console.log(_id);
       const itemResponse = await axiosSecure.get(`/items/${_id}`);
+      // const itemResponse = items.find((item)=>(item._id==_id));
+      
       const itemData = itemResponse.data;
-
+      console.log(itemData.Payable_amount);
       if (!itemData || !itemData.Payable_amount || !itemData.task_quantity) {
           throw new Error('Missing Payable_amount or task_quantity in item data');
       }

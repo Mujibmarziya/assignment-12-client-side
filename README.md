@@ -1,8 +1,17 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Website Name:Coin Workers
+- Admin username:onlyadmin2@gmail.com
+- Admin Password:1234Mm$
+- Task Creater username:taskcreater4@gmail.com
+- Task creater password:1234Mm$
+- live site link:https://fluffy-tapioca-04c919.netlify.app/
+- Top 10 features of my website:-
+- 1. Users can create their account and select their role.
+- 2. Users can Earn coins by completing tasks
+- 3. There will be 3 roles:-Worker, Task cReater ,Admin.
+- 4. Users can create new tasks if they are task-creater.
+- 5. Task creaters can update and delete their own tasks.
+- 6. Task creaters can approve tasks submitted from workers.
+- 7. Task creaters can purchase coin with stripe account
+- 8. Workers can withdraw their money if they have enough coins.
+- 9. Admin can change the role of workers.
+- 10. Admin can delete any task creatted by any task creater and can also delete any user.
