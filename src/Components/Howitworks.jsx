@@ -19,7 +19,7 @@ const Howitworks = () => {
     <img src="https://i.ibb.co/K2L1V6v/micheile-henderson-h-QSDJh-Tf2-Po-unsplash.jpg" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">How You Can Boost up Your Earning.</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="py-6">Develop Passive Income Stream By Earning Coins With Us.</p>
      <div className='flex gap-3'>
      <NavLink to='/signup'><button className="btn btn-primary">Sign up</button></NavLink>
       <NavLink to='/signup'><button className="btn btn-primary">Complete Tasks</button></NavLink>
