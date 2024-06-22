@@ -17,6 +17,7 @@ const AdminHome = () => {
     const { user } = useContext(AuthContext)
     const axiosSecure = useAxiosCommon()
     const [users] =useUsers();
+    const [totalPaymentsByAllTaskCreatersvalue,setTotal] =useState(0);
     console.log(users);
     const totalUserCoins = users.reduce((total, user) => total + parseInt(user.userCoin), 0);
     // const [totalWithdrawal, setTotalWithdrawal] = useState(() => {
@@ -48,16 +49,19 @@ const AdminHome = () => {
       },
     })
     console.log(withdrawals);
-    // useEffect(() => {
-    //     // Calculate the total withdrawal amount whenever the withdrawals data changes
-    //     if (withdrawals.length > 0) {
-    //         // const total = withdrawals.reduce((sum, withdrawal) => sum + withdrawal.withdrawAmount, 0);
-
-    //         setTotalWithdrawal(total);
-    //         // Save the total withdrawal amount to local storage
-    //         localStorage.setItem('totalWithdrawal', total.toString());
-    //     }
-    // }, [withdrawals]);
+    useEffect(() => {
+      const fetchPayments = async () => {
+        try {
+          const { data } = await axiosSecure.get('/payments');
+          const totalPaymentsByAllTaskCreators = data.reduce((sum, fil) => sum + parseInt(fil.price), 0);
+          setTotal(totalPaymentsByAllTaskCreators);
+        } catch (error) {
+          console.error('Error fetching payments:', error);
+        }
+      };
+  
+      fetchPayments();
+    }, [axiosSecure]);
     const handlePaymentSuccess =async (_id,workeremail,coins) => {
         try{
             const { data } = await axiosSecure.delete(`/withdrawals/${_id}`)
@@ -93,6 +97,8 @@ const AdminHome = () => {
       <div>
           <h1 className=' text-blue-950 font-bold text-center mb-3'>All the Tasks</h1>
           <h2 className="text-blue-950 font-bold text-center mb-3">Total payments: {paymentCount}</h2>
+          <h2 className="text-blue-950 font-bold text-center mb-3">Total payments By Task Creaters: {totalPaymentsByAllTaskCreatersvalue} $</h2>
+          {/* I was unclear about the requirements for total payments made by the user from various sources.That's why i implemented both.Total Payments And Total dollar payments by taskcreaters.  */}
           <h2 className="text-blue-950 font-bold text-center mb-3">Total Users: {users.length}</h2>
           <h2 className="text-blue-950 font-bold text-center mb-3">Total Users coins: {totalUserCoins}</h2>
       </div>

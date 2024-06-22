@@ -208,7 +208,7 @@ const Signup = () => {
       </select>
     </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary  bg-black  border-2 border-black text-white">Register</button>
+          <button className="btn btn-primary  bg-blue-900  border-2 border-blue-900 text-white">Register</button>
         </div>
         <label className="label text-black">
                 Have an account?{" "}

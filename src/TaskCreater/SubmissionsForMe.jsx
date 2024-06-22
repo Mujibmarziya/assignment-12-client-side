@@ -56,7 +56,7 @@ const SubmissionsForMe = () => {
         <TableCell><h1 className='font-bold text-blue-950 '>Title</h1></TableCell>
         
         <TableCell align="right"><h1 className='font-bold text-blue-950'>Task Detail</h1></TableCell>
-         <TableCell align="center"><h1 className=' text-right text-pink-800 font-bold lg:text-center'>Date of submission</h1></TableCell>
+         <TableCell align="center"><h1 className=' text-right text-blue-950 font-bold lg:text-center'>Date of submission</h1></TableCell>
         <TableCell align="right"><h1 className='font-bold text-blue-950'>Task Quantity</h1></TableCell>
         <TableCell align="right"><h1 className='font-bold text-blue-950'>Submission Detail</h1></TableCell> 
         <TableCell align="right"><h1 className='font-bold text-blue-950'>Payable Amount</h1></TableCell>

@@ -125,14 +125,14 @@ const Login = () => {
       
     </div>
     <div className="form-control mt-6">
-      <button className="btn btn-primary bg-transparent text-black border-2 border-black hover:bg-black hover:text-white hover:border-none">Log in</button>
+      <button className="btn btn-primary bg-transparent text-blue-900 border-2 border-blue-900 hover:bg-black hover:text-white hover:border-none">Log in</button>
     </div>
 
    
     <label className="label">
             Dont have an account?  {" "}
             <Link to="/signup" className="label-text-alt link link-hover">
-            <span className='btn   bg-black text-black border-2 border-black text-white'>Register</span>
+            <span className='btn   bg-blue-900 border-2 border-black text-white'>Register</span>
             </Link>
           </label>
   </form>
