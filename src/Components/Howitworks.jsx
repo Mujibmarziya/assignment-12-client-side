@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import useUser from '../Hooks/useUser';
 
 const Howitworks = () => {
-  const[users]=useUser()
-  console.log(users.length);
+  // const[users]=useUser()
+  // console.log(users.length);
     return (
         <div>
              <div className="flex justify-center items-center border-y-2 border-dotted mt-14 p-14">
