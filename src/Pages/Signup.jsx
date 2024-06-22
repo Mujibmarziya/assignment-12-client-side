@@ -136,11 +136,7 @@ const Signup = () => {
       //       body: JSON.stringify(notiData)
       //   });
 
-      //   const notisResponse = await notis.json();
-      //  if(notisResponse){
-      //   toast.success('Notification created successfully');
-      //  }
-        // toast.success('Notification created successfully');
+      
           // Create user and update profile
           await createuser(email, password);
           await updateuserprofile(fullName,res.data.data.display_url, email);
