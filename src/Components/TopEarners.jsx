@@ -10,18 +10,9 @@ const TopEarners = () => {
     const axiosSecure = useAxiosCommon()
     // const [users] = useUser()
     // console.log(users.length);
-    // const [topUsers, setTopUsers] = useState([]);
+   
 
-    // useEffect(() => {
-    //     // Sort the users by userCoin in descending order
-    //     const sortedUsers = [...users].sort((a, b) => b.userCoin - a.userCoin);
-
-    //     // Get the top 6 users
-    //     const topSixUsers = sortedUsers.slice(0, 6);
-
-    //     setTopUsers(topSixUsers);
-    // }, [users]);
-    // console.log(topUsers);
+   
     const {
         data: users = [],
         isLoading,
