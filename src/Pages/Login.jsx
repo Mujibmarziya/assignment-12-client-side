@@ -141,9 +141,7 @@ const Login = () => {
       </label>
       <input name='password' type="password" placeholder="password" className="input input-bordered"  />
      
-      <label className="label">
-        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-      </label>
+      
     </div>
     <div className="form-control mt-6">
       <button className="btn btn-primary bg-transparent text-black border-2 border-black hover:bg-black hover:text-white hover:border-none">Log in</button>
