@@ -176,7 +176,7 @@ console.log(' coin:', coin,dollar);
                 },
             }}
         />
-        <button className="btn btn-sm btn-primary my-4" type="submit" disabled={!stripe || !clientSecret}>
+        <button className="btn btn-sm btn-primary bg-blue-900 my-4" type="submit" disabled={!stripe || !clientSecret}>
             Pay
         </button>
         <p className="text-red-600">{error}</p>
