@@ -69,7 +69,7 @@ const Update = () => {
         // backgroundRepeat: 'no-repeat' 
       }}
     >
-      <p className=" font-semibold text-black lg:text-green-600">Add a item</p>
+      <p className=" font-semibold text-black lg:text-green-600">Update the task</p>
       
     </div>
                 <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
@@ -89,29 +89,9 @@ const Update = () => {
                         <label htmlFor="firstname" className=" text-left text-black">Enter submission Info:</label>
                         <input defaultValue={singleitem.submission_info}  name='submissioninfo' id="firstname" type="text" placeholder="Enter Long Description" className="w-full rounded-md  p-3 text-black  " />
                     </div>
-                    {/* <div className="col-span-full flex flex-col gap-2  sm:col-span-3">
-                    <label htmlFor="firstname" className=" text-left text-black">Enter amount:</label>
-                    <input  name='amount' id="firstname" type="text" placeholder="Enter amount" className="w-full rounded-md  p-3 text-black  " />
+               
                   
-                    </div> */}
-                    {/* <div className="col-span-full flex flex-col gap-2  sm:col-span-3">
-                    <label htmlFor="firstname" className=" text-left text-black">Enter Task Quantity:</label>
-                    <input  name='task_quantity' id="firstname" type="text" placeholder="Enter Task Quantity" className="w-full rounded-md  p-3 text-black  " />
-                  
-                    </div> */}
-                    {/* <div className='space-y-1'>
-                  <label htmlFor='location' className='block text-gray-600'>
-                  completion date
-                  </label>
-                  {/* Calender */}
-                  {/* <DateRange
-                    rangeColors={['#F43F5E']}
-                    editableDateInputs={true}
-                    onChange={item => handleDates(item)}
-                    moveRangeOnFirstSelection={false}
-                    ranges={[dates]}
-                  />
-                </div>  */}
+                
                     
                 </div>
             </fieldset>
