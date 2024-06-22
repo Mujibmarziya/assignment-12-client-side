@@ -111,9 +111,7 @@ const Details = () => {
                 <h1 className='text-blue-900 font-bold text-center'> Payable Amount: <span className=' text-slate-600 font-medium'>{Payable_amount}</span></h1>
                 <h1 className='text-blue-900 font-bold text-center'> Todays Date: <span className=' text-slate-600 font-medium'>{dateTime}</span></h1>
                 <h1 className='text-blue-900 font-bold text-center'> Completion  Date: <span className=' text-slate-600 font-medium'>
-                {/* <Countdown date={Date.now() + to}>
-      
-    </Countdown> */}
+               
       <Countdown date={new Date(to)} />
                     </span></h1>
                 <h1 className='text-blue-900 font-bold text-center'> status: <span className=' text-slate-600 font-medium'>Pending</span></h1>
