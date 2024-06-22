@@ -20,7 +20,7 @@ const MySubmissions = () => {
     const axiosSecure = useAxiosCommon()
     const [currentPage, setCurrentPage] = useState(1);
   const [pageSize] = useState(10); 
-    //   Fetch Rooms Data
+   
     const {
       data: items = [],
       isLoading,
@@ -41,29 +41,9 @@ const MySubmissions = () => {
       setCurrentPage(newPage);
     };
   
-    //   delete
-    // const { mutateAsync } = useMutation({
-    //   mutationFn: async id => {
-    //     const { data } = await axiosSecure.delete(`/room/${id}`)
-    //     return data
-    //   },
-    //   onSuccess: data => {
-    //     console.log(data)
-    //     refetch()
-    //     toast.success('Successfully deleted.')
-    //   },
-    // })
   
-    // //  Handle Delete
-    // const handleDelete = async id => {
-    //   console.log(id)
-    //   try {
-    //     await mutateAsync(id)
-    //   } catch (err) {
-    //     console.log(err)
-    //   }
-    // }
-    // if (isLoading) return <LoadingSpinner />
+  
+   
     return (
         <div>
         <div>
