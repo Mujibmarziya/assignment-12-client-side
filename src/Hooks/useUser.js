@@ -14,14 +14,7 @@ const useUsers = () => {
     queryFn: async () => {
       const { data } = await axiosSecure('/users');
       return data;
-    //   const filtered = data.find((dat) => dat.email == user?.email);
-
-    //   if (filtered) {
-    //     console.log(filtered.userCoin);
-    //     return filtered.userCoin;
-    //   } else {
-    //     return 0; // Return an empty string if the user is not found
-    //   }
+   
     },
   });
 
