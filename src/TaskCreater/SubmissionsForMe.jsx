@@ -18,7 +18,7 @@ const SubmissionsForMe = () => {
     const { user } = useContext(AuthContext)
     const coin =useCoin();
     const axiosSecure = useAxiosCommon()
-    //   Fetch Rooms Data
+    //   Fetch  Data
     const {
       data: submissions = [],
       isLoading,

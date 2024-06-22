@@ -65,6 +65,7 @@ const TableRowMySubs = ({row,refetch}) => {
         {title}
        </TableCell>
        <TableCell align="right">{Task_details}</TableCell>
+       <TableCell align="right">{Task_details}</TableCell>
        <TableCell align="right">{dateOfSubmission}</TableCell> 
        <TableCell align="right"><h1 className='text-right lg:text-center'>{task_quantity}</h1></TableCell>
        <TableCell align="right">{submission_Details}</TableCell>
@@ -78,30 +79,18 @@ const TableRowMySubs = ({row,refetch}) => {
      <Link  onClick={()=>handlestatus('Rejected')} className="btn m-4 text-white bg-blue-900" >
        Reject
      </Link>
+     <Link className="btn m-4 text-white bg-blue-900" to={`subdetail/${_id}`}>Submissions Details</Link>
      
-     <button className="btn bg-blue-900 text-white" onClick={()=>document.getElementById('my_modal_1').showModal()}>Submission Details</button>
-<dialog id="my_modal_1" className="modal">
-  <div className="modal-box">
-  <h3 className="font-bold text-lg">Submission Details</h3>
+    
+  {/* <h3 className="font-bold text-lg">Submission Details</h3>
     <h3 className="font-bold text-lg "><span className='text-blue-900'>Task Title:</span> {title}</h3>
     <p className="py-4"><span className='text-blue-900'>Task Details:</span>{Task_details}</p>
     <p className="py-4"><span className='text-blue-900'>Submissions Info:</span>{submission_info}</p>
-    <p className="py-4"><span className='text-blue-900'>Payable Amount:</span>{Payable_amount}</p>
-    <div className="modal-action">
-      <form method="dialog">
-        {/* if there is a button in form, it will close the modal */}
-        <button className="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
-      </div>
-       {/* <TableCell align="right">
-      
+    <p className="py-4"><span className='text-blue-900'>Payable Amount:</span>{Payable_amount}</p> */}
+   
     
-    
-   {/* </TableCell> */}
+ 
+</div>
      </TableRow>
     
     );

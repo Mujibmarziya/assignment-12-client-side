@@ -31,44 +31,10 @@ const TableRowManageTasks = ({row,handleDelete,refetch}) => {
             Delete
           </Link>
 
-          {/* Open the modal using document.getElementById('ID').showModal() method */}
-          {/* <img src="https://i.ibb.co/qn2Qrjs/icons8-task-24.png" alt="" /> */}
-<button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}><MdOutlineTask></MdOutlineTask></button>
-<dialog id="my_modal_1" className="modal">
-  <div className="modal-box">
-  <h3 className="font-bold text-lg">Task Details</h3>
-    <h3 className="font-bold text-lg "><span className='text-blue-900'>Task Title:</span> {title}</h3>
-    <p className="py-4"><span className='text-blue-900'>Task Details:</span>{Task_details}</p>
-    <p className="py-4"><span className='text-blue-900'>Submissions Info:</span>{submission_info}</p>
-    <p className="py-4"><span className='text-blue-900'>Payable Amount:</span>{Payable_amount}</p>
-    <div className="modal-action">
-      <form method="dialog">
-        {/* if there is a button in form, it will close the modal */}
-        <button className="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-        {/* <TableCell align="right">
-        <label htmlFor={`role-select-${_id}`} className='block mb-4 text-sm'>Select Role:</label>
-          <select
-            name="role"
-            id={`role-select-${_id}`}
-            value={rolee}
-            className='border-2 p-3 rounded-xl'
-            onChange={handleRoleChange}
-          >
-            <option>Select an option</option>
-            <option value="worker">worker</option>
-            <option value="task-creator">Task Creator</option>
-            <option value="admin">Admin</option>
-          </select>
-          </TableCell>  */}
-        {/* <TableCell align="right">
+          <Link className="btn m-4 text-white bg-blue-900" to={`managetaskdetail/${_id}`}> Details</Link>
+
+        
        
-     
-     
-    {/* </TableCell> */}
       </TableRow>
     );
 };

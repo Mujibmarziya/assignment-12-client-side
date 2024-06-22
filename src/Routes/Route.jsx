@@ -21,7 +21,8 @@ import ManageTasks from '../AdminMenu/ManageTasks'
 import Withdrawal from '../Worker/Withdrawal'
 import AdminHome from '../AdminMenu/AdminHome'
 
-
+import SubDetail from '../TaskCreater/SubDetail'
+import ManagetaskDetail from '../AdminMenu/ManagetaskDetail'
 export const Route = createBrowserRouter([
   {
     path: '/',
@@ -115,6 +116,24 @@ export const Route = createBrowserRouter([
             element: (
               <Privateroute>
               <Details></Details>
+              </Privateroute>
+            ),
+            loader: ({params}) => fetch(`https://assignment-12-server-beige-five.vercel.app/items/${params._id}`),
+          },
+          {
+            path: 'task-creater-home/subdetail/:_id',
+            element: (
+              <Privateroute>
+              <SubDetail></SubDetail>
+              </Privateroute>
+            ),
+            loader: ({params}) => fetch(`https://assignment-12-server-beige-five.vercel.app/submissions/${params._id}`),
+          },
+          {
+            path: 'manage-tasks/managetaskdetail/:_id',
+            element: (
+              <Privateroute>
+              <ManagetaskDetail></ManagetaskDetail>
               </Privateroute>
             ),
             loader: ({params}) => fetch(`https://assignment-12-server-beige-five.vercel.app/items/${params._id}`),
